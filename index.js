@@ -1,12 +1,12 @@
 const express = require("express")
-const port= process.env.port || 5000
+const port = process.env.port || 3395
 const Datastore = require ("nedb")
 const mongoose = require ("mongoose")
 const app = express()
-const cors=require("cors")
+const cors = require("cors")
 app.use(express. static("public"))
 app.use(express.json())
-//const database =new Datastore("database.db")
+//const database = new Datastore("database.db")
 const ONLINE_DB="mongodb+srv://chinonso:chinonso@cluster0.1tynp.mongodb.net/company?retryWrites=true&w=majority"
 
 mongoose.connect(ONLINE_DB,{
